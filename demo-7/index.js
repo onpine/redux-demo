@@ -14,13 +14,13 @@ const reducer = combineReducers({
   info: InfoReducer,
 });
 
-const newCreateStore = applyMiddleware(
+const rewriteCreateStoreFunc = applyMiddleware(
   exceptionMiddleware,
   timeMiddleware,
   loggerMiddleware
-)(createStore);
+);
 
-const store = newCreateStore(reducer);
+const store = createStore(reducer, {}, rewriteCreateStoreFunc);
 
 store.subscribe(() => {
   let state = store.getState();

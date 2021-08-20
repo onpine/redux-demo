@@ -1,5 +1,10 @@
 /*增加一个参数 reducer*/
-const createStore = function (reducer, initState) {
+const createStore = function (reducer, initState, rewriteCreateStoreFunc) {
+  if (rewriteCreateStoreFunc) {
+    const newCreateStore = rewriteCreateStoreFunc(createStore);
+    return newCreateStore(reducer, initState);
+  }
+
   let state = initState;
   let listeners = [];
 
