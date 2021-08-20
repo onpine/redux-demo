@@ -1,0 +1,12 @@
+{
+  "name": "redux-demo",
+  "version": "1.0.0",
+  "description": "reudx实现",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./demo-1/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
