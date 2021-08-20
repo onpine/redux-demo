@@ -4,3 +4,4 @@
 - demo-2 有计划的状态管理器
 - demo-3 多文件协作
 - demo-4 state 的拆分与合并
+- demo-6 中间件 middleware
