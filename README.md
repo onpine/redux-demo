@@ -5,3 +5,4 @@
 - demo-3 多文件协作
 - demo-4 state 的拆分与合并
 - demo-6 中间件 middleware
+- demo-7 中间件使用优化

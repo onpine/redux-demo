@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "babel-node ./demo-6/index.js"
+    "test": "babel-node ./demo-7/index.js"
   },
   "author": "",
   "license": "ISC",
