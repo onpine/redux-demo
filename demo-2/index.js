@@ -4,7 +4,7 @@ import reducer from "./reducer.js";
 let initState = {
   count: 0,
 };
-/*把plan函数*/
+/*把reducer函数*/
 let store = createStore(reducer, initState);
 
 store.subscribe(() => {
