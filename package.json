@@ -5,8 +5,12 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "node ./demo-1/index.js"
+    "test": "babel-node ./demo-2/index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }
